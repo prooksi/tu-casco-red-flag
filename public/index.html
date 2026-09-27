@@ -14,6 +14,40 @@
 @media(max-width:850px){.nav{height:64px;padding:0 18px}.logo{font-size:20px}.hero-grid{padding:24px 18px 58px;gap:22px}.visual{order:0;min-height:340px;margin-top:8px}.poster{position:relative;top:auto;right:auto;width:88%;margin:0 auto;transform:rotate(1.5deg);border-width:5px;box-shadow:12px 12px 0 #111}.sticker{left:50%;right:auto;bottom:0;width:min(250px,82vw);transform:translateX(-50%) rotate(-3deg);padding:16px 18px 14px;font-size:22px;box-shadow:6px 6px 0 #111}.sticker small{font-size:11px;margin-top:8px}.hero h1{font-size:clamp(50px,16vw,78px);line-height:.82;letter-spacing:-3px;overflow-wrap:anywhere}.hero-copy{font-size:17px}.finder{padding:18px;border-radius:18px;box-shadow:7px 8px 0 rgba(0,0,0,.18)}.finder-title{font-size:21px}.section{padding:62px 18px}.section h2{font-size:clamp(40px,13vw,62px);letter-spacing:-3px}.quote{font-size:34px}}
 @media(max-width:480px){.top{font-size:9px;padding:8px 10px}.nav{height:58px}.logo{font-size:17px;letter-spacing:-1px}.navcta{padding:10px 12px;font-size:10px}.hero-grid{padding-top:18px}.kicker{font-size:11px;letter-spacing:1.4px}.hero h1{font-size:clamp(44px,15.5vw,64px);letter-spacing:-2.5px}.visual{min-height:285px}.poster{width:94%}.sticker{font-size:20px;width:min(230px,86vw)}.fields select,.fields input{padding:14px}.status{font-size:24px}.result{padding:15px}.result-head{display:block}.stamp{display:inline-block;margin-top:9px}.campaign img{border-width:5px;box-shadow:9px 9px 0 #111}}
 </style>
+
+<style>
+/* Corrección de títulos en móvil: más aire entre líneas y palabras completas */
+@media(max-width:850px){
+  .hero h1{
+    font-size:clamp(46px,13.5vw,70px);
+    line-height:.94;
+    letter-spacing:-2.2px;
+  }
+  .hero h1 span{
+    line-height:.94;
+  }
+  .section h2{
+    line-height:1.02;
+    letter-spacing:-2px;
+  }
+}
+@media(max-width:480px){
+  .hero h1{
+    font-size:clamp(42px,12.6vw,58px);
+    line-height:.98;
+    letter-spacing:-1.8px;
+  }
+  .hero h1 span{
+    line-height:.98;
+  }
+  .section h2{
+    font-size:clamp(38px,11.5vw,54px);
+    line-height:1.05;
+    letter-spacing:-1.5px;
+  }
+}
+</style>
+
 </head>
 <body>
 <div class="top">CAMPAÑA DE SEGURIDAD VIAL · <a href="https://www.conaset.cl/cascos-acreditados/" target="_blank" rel="noopener">VER FUENTE OFICIAL CONASET ↗</a></div>
