@@ -227,6 +227,24 @@
 }
 @media (max-width:850px){.visual{order:0!important;min-height:150px!important;margin-top:8px!important;display:flex!important;align-items:flex-start!important;justify-content:center!important}.sticker{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;width:min(250px,82vw)!important;margin:12px auto 18px!important;transform:rotate(-3deg)!important}}
 </style>
+
+<style>
+/* Casco visual del hero */
+.hero-helmet{display:block;width:min(430px,100%);height:auto;object-fit:contain;margin:0 auto 8px;filter:drop-shadow(14px 18px 0 rgba(0,0,0,.16));}
+@media (min-width:851px){
+  .visual{min-height:520px!important;flex-direction:column!important;justify-content:center!important;}
+  .hero-helmet{width:430px;max-width:100%;margin:-15px auto 5px;}
+  .sticker{margin:4px auto 0!important;}
+}
+@media (max-width:850px){
+  .visual{min-height:auto!important;flex-direction:column!important;align-items:center!important;}
+  .hero-helmet{width:min(390px,88vw);margin:12px auto 4px;}
+  .sticker{margin:4px auto 20px!important;}
+}
+@media (max-width:480px){
+  .hero-helmet{width:min(340px,90vw);}
+}
+</style>
 </head>
 <body>
 <div class="top">CAMPAÑA DE SEGURIDAD VIAL · <a href="https://www.conaset.cl/cascos-acreditados/" target="_blank" rel="noopener">VER FUENTE OFICIAL CONASET ↗</a></div>
@@ -244,7 +262,7 @@
 <div class="source">La herramienta usa el listado oficial consultado desde <a href="https://www.conaset.cl/cascos-acreditados/" target="_blank" rel="noopener">CONASET</a>. Ante cualquier discrepancia, prevalece la fuente oficial.</div>
 </div>
 </section>
-<div class="visual"><div class="sticker">¿Y EL TUYO?<small>Escanea · Comprueba · Rueda informado.</small></div></div>
+<div class="visual"><img class="hero-helmet" src="casco-red-flag.png" alt="Casco de motocicleta de la campaña Red Flag"><div class="sticker">¿Y EL TUYO?<small>Escanea · Comprueba · Rueda informado.</small></div></div>
 </div>
 </header>
 <div class="ticker"><div class="ticker-inner"><span>NO TODO CASCO ES IGUAL</span>✦<span>REVISA ANTES DE RODAR</span>✦<span>RED FLAG</span>✦<span>NO TODO CASCO ES IGUAL</span>✦<span>REVISA ANTES DE RODAR</span>✦</div></div>
