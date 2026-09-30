@@ -216,6 +216,17 @@
 }
 </style>
 
+
+<style>
+/* AJUSTE ESTETICO FINAL DEL HERO */
+.hero > .hero-grid .poster{display:none!important}
+@media (min-width:851px){
+.hero-grid{grid-template-columns:minmax(0,1fr) 270px!important;gap:58px!important;max-width:1220px!important;padding-top:62px!important;padding-bottom:92px!important;align-items:center!important}
+.hero-grid>section{min-width:0}.hero h1::before,.hero h1::after{font-size:clamp(62px,5.25vw,96px)!important}.hero-copy{max-width:720px!important}.finder{max-width:760px!important;padding:26px!important}
+.visual{min-height:430px!important;display:flex!important;align-items:center!important;justify-content:center!important}.sticker{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;width:235px!important;margin:70px auto 0!important;padding:20px 20px 17px!important;font-size:25px!important;transform:rotate(-5deg)!important}
+}
+@media (max-width:850px){.visual{order:0!important;min-height:150px!important;margin-top:8px!important;display:flex!important;align-items:flex-start!important;justify-content:center!important}.sticker{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;width:min(250px,82vw)!important;margin:12px auto 18px!important;transform:rotate(-3deg)!important}}
+</style>
 </head>
 <body>
 <div class="top">CAMPAÑA DE SEGURIDAD VIAL · <a href="https://www.conaset.cl/cascos-acreditados/" target="_blank" rel="noopener">VER FUENTE OFICIAL CONASET ↗</a></div>
@@ -233,7 +244,7 @@
 <div class="source">La herramienta usa el listado oficial consultado desde <a href="https://www.conaset.cl/cascos-acreditados/" target="_blank" rel="noopener">CONASET</a>. Ante cualquier discrepancia, prevalece la fuente oficial.</div>
 </div>
 </section>
-<div class="visual"><div class="poster"><img src="campana-horizontal.jpeg" alt="Gráfica Tu Casco es Red Flag"></div><div class="sticker">¿Y EL TUYO?<small>Escanea · Comprueba · Rueda informado.</small></div></div>
+<div class="visual"><div class="sticker">¿Y EL TUYO?<small>Escanea · Comprueba · Rueda informado.</small></div></div>
 </div>
 </header>
 <div class="ticker"><div class="ticker-inner"><span>NO TODO CASCO ES IGUAL</span>✦<span>REVISA ANTES DE RODAR</span>✦<span>RED FLAG</span>✦<span>NO TODO CASCO ES IGUAL</span>✦<span>REVISA ANTES DE RODAR</span>✦</div></div>
