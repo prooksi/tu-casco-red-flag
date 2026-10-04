@@ -487,6 +487,89 @@ body{background:var(--paper)}
 }
 </style>
 
+
+<style>
+/* Corrección móvil: evita que COMPROBAR choque con pregunta/respuesta */
+@media (max-width:850px){
+  .nav{
+    height:auto !important;
+    min-height:74px !important;
+    padding:16px 20px !important;
+    align-items:flex-start !important;
+    gap:14px !important;
+  }
+
+  .nav .logo{
+    max-width:calc(100% - 190px) !important;
+    line-height:1.12 !important;
+  }
+
+  .nav .links{
+    margin-left:auto !important;
+    flex:0 0 auto !important;
+  }
+
+  .nav .links a:not(.cta){
+    display:none !important;
+  }
+
+  .nav .cta{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    min-width:150px !important;
+    height:48px !important;
+    padding:0 22px !important;
+    white-space:nowrap !important;
+  }
+
+  .hero-grid{
+    padding-top:92px !important;
+  }
+
+  .hero .kicker{
+    top:-50px !important;
+    left:0 !important;
+    width:100% !important;
+    max-width:none !important;
+    padding-right:0 !important;
+    white-space:normal !important;
+  }
+}
+
+/* Teléfonos angostos: pregunta arriba y botón debajo */
+@media (max-width:520px){
+  .nav{
+    flex-wrap:wrap !important;
+  }
+
+  .nav .logo{
+    max-width:100% !important;
+    width:100% !important;
+  }
+
+  .nav .links{
+    width:100% !important;
+    justify-content:flex-start !important;
+    margin-left:0 !important;
+  }
+
+  .nav .cta{
+    min-width:0 !important;
+    width:auto !important;
+    height:44px !important;
+  }
+
+  .hero-grid{
+    padding-top:78px !important;
+  }
+
+  .hero .kicker{
+    top:-48px !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <div class="top">CAMPAÑA DE SEGURIDAD VIAL · <a href="https://www.conaset.cl/cascos-acreditados/" target="_blank" rel="noopener">VER FUENTE OFICIAL CONASET ↗</a></div>
