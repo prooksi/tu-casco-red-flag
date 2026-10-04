@@ -570,6 +570,64 @@ body{background:var(--paper)}
 }
 </style>
 
+
+<style>
+/* Ajustes finales de composición móvil */
+@media (max-width:850px){
+  /* Acerca la respuesta a la pregunta superior */
+  .hero-grid{
+    padding-top:48px !important;
+  }
+
+  .hero .kicker{
+    top:-30px !important;
+    left:0 !important;
+    width:100% !important;
+    margin:0 !important;
+  }
+
+  /* ¿SIN ACREDITACIÓN? completa en una sola línea */
+  .hero h1{
+    width:100% !important;
+    max-width:100% !important;
+    margin-top:30px !important;
+  }
+
+  .hero h1 span:nth-child(1),
+  .hero h1 span:nth-child(2){
+    display:inline !important;
+    white-space:nowrap !important;
+    font-size:clamp(25px,7.2vw,36px) !important;
+    letter-spacing:-1.2px !important;
+    line-height:1 !important;
+  }
+
+  .hero h1 span:nth-child(1)::after{
+    content:" " !important;
+  }
+
+  .hero h1 span.red{
+    display:block !important;
+    margin-top:10px !important;
+    font-size:clamp(52px,14vw,72px) !important;
+    line-height:.95 !important;
+    white-space:nowrap !important;
+  }
+}
+
+@media (max-width:430px){
+  .hero h1 span:nth-child(1),
+  .hero h1 span:nth-child(2){
+    font-size:clamp(23px,6.9vw,30px) !important;
+    letter-spacing:-1px !important;
+  }
+
+  .hero h1 span.red{
+    font-size:clamp(48px,13.5vw,62px) !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <div class="top">CAMPAÑA DE SEGURIDAD VIAL · <a href="https://www.conaset.cl/cascos-acreditados/" target="_blank" rel="noopener">VER FUENTE OFICIAL CONASET ↗</a></div>
