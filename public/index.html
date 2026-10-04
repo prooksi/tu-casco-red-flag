@@ -628,6 +628,44 @@ body{background:var(--paper)}
 }
 </style>
 
+
+<style>
+/* SECCIÓN: IMPACTO DEL CASCO SEGURO */
+.impacto-casco{background:#0b0b0b;color:#fff;padding:82px 24px;border-top:1px solid #242424}
+.impacto-wrap{max-width:1180px;margin:auto}
+.impacto-eyebrow{color:#ffd400;font-size:12px;font-weight:1000;letter-spacing:2.4px;text-transform:uppercase;margin-bottom:12px}
+.impacto-casco h2{margin:0;max-width:900px;font-size:clamp(40px,5vw,72px);line-height:.92;letter-spacing:-3px;text-transform:uppercase}
+.impacto-intro{max-width:760px;margin:22px 0 34px;color:#c9c9c9;font-size:17px;line-height:1.55}
+.impacto-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}
+.impacto-card{background:#151515;border:1px solid #292929;padding:25px 26px}
+.impacto-card small{display:block;color:#aaa;font-size:13px;margin-bottom:8px}
+.impacto-num{color:#ff2027;font-size:clamp(42px,5vw,62px);line-height:1;font-weight:1000;letter-spacing:-2px}
+.impacto-num span{color:#fff;font-size:14px;letter-spacing:0}
+.impacto-chart{background:#151515;border:1px solid #303030;padding:34px}
+.chart-title{font-size:17px;font-weight:900;margin-bottom:26px}
+.chart-row{display:grid;grid-template-columns:48px 1fr;gap:12px}
+.chart-y{height:250px;display:flex;flex-direction:column;justify-content:space-between;color:#888;font-size:10px;text-align:right}
+.chart-body{height:250px;display:grid;grid-template-columns:1fr 1fr;gap:55px;padding:0 35px;border-bottom:1px solid #444;background:linear-gradient(to bottom,transparent 24.6%,#303030 25%,transparent 25.4%,transparent 49.6%,#303030 50%,transparent 50.4%,transparent 74.6%,#303030 75%,transparent 75.4%)}
+.chart-group{display:flex;align-items:flex-end;justify-content:center;gap:18px}
+.chart-bar-wrap{height:100%;width:72px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center}
+.chart-val{font-size:11px;font-weight:1000;margin-bottom:6px}
+.chart-bar{width:100%;background:#ffd400}.chart-bar.red{background:#ff2027}
+.chart-labels{display:grid;grid-template-columns:1fr 1fr;gap:55px;margin-left:60px;padding:12px 35px 0;text-align:center;color:#ddd;font-size:12px}
+.chart-legend{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:24px;color:#aaa;font-size:12px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#ffd400;margin-right:7px}.dot.red{background:#ff2027}
+.impacto-callout{margin-top:18px;background:#151515;border-left:4px solid #ffd400;padding:20px 22px;line-height:1.5}
+.impacto-callout b{color:#ffd400}
+.impacto-source{margin-top:15px;color:#777;font-size:11px;line-height:1.5}
+.impacto-source a{color:#aaa;text-decoration:underline}
+@media(max-width:850px){
+ .impacto-casco{padding:58px 20px}.impacto-casco h2{font-size:clamp(38px,11vw,56px);letter-spacing:-2px}
+ .impacto-cards{grid-template-columns:1fr}.impacto-chart{padding:25px 16px}
+ .chart-row{grid-template-columns:30px 1fr;gap:8px}.chart-y,.chart-body{height:210px}
+ .chart-body{gap:14px;padding:0 8px}.chart-group{gap:6px}.chart-bar-wrap{width:38px}
+ .chart-labels{margin-left:38px;gap:14px;padding:10px 8px 0;font-size:9px}.chart-legend{justify-content:flex-start}
+}
+</style>
+
 </head>
 <body>
 <div class="top">CAMPAÑA DE SEGURIDAD VIAL · <a href="https://www.conaset.cl/cascos-acreditados/" target="_blank" rel="noopener">VER FUENTE OFICIAL CONASET ↗</a></div>
@@ -648,6 +686,42 @@ body{background:var(--paper)}
 <div class="visual"><img class="hero-helmet" src="casco-red-flag.png" alt="Casco de motocicleta de la campaña Red Flag"><div class="sticker">¿Y EL TUYO?<small>Escanea · Comprueba · Rueda informado.</small></div></div>
 </div>
 </header>
+
+<section class="impacto-casco" id="por-que-importa">
+ <div class="impacto-wrap">
+  <div class="impacto-eyebrow">Más que apariencia</div>
+  <h2>¿Por qué importa un casco seguro?</h2>
+  <p class="impacto-intro">Un casco no se evalúa solo por cómo se ve. Su diseño, materiales y capacidad de protección deben responder a estándares de seguridad.</p>
+
+  <div class="impacto-cards">
+   <div class="impacto-card"><small>Riesgo y gravedad de traumatismos</small><div class="impacto-num">−72% <span>aprox.</span></div></div>
+   <div class="impacto-card"><small>Riesgo de lesión cerebral</small><div class="impacto-num">−74% <span>hasta</span></div></div>
+  </div>
+
+  <div class="impacto-chart">
+   <div class="chart-title">El casco marca una diferencia</div>
+   <div class="chart-row">
+    <div class="chart-y"><span>100%</span><span>75%</span><span>50%</span><span>25%</span><span>0%</span></div>
+    <div class="chart-body">
+     <div class="chart-group">
+      <div class="chart-bar-wrap"><div class="chart-val">100%</div><div class="chart-bar" style="height:100%"></div></div>
+      <div class="chart-bar-wrap"><div class="chart-val">100%</div><div class="chart-bar red" style="height:100%"></div></div>
+     </div>
+     <div class="chart-group">
+      <div class="chart-bar-wrap"><div class="chart-val">28%</div><div class="chart-bar" style="height:28%"></div></div>
+      <div class="chart-bar-wrap"><div class="chart-val">26%</div><div class="chart-bar red" style="height:26%"></div></div>
+     </div>
+    </div>
+   </div>
+   <div class="chart-labels"><div>Referencia<br>sin casco</div><div>Con casco<br>seguro</div></div>
+   <div class="chart-legend"><span><i class="dot"></i>Riesgo y gravedad de traumatismos</span><span><i class="dot red"></i>Riesgo de lesión cerebral</span></div>
+  </div>
+
+  <div class="impacto-callout"><b>¿Y la acreditación?</b> En Chile, permite verificar que el modelo cumple normas internacionales reconocidas y requisitos de seguridad, diseño e información al usuario.</div>
+  <p class="impacto-source">Fuentes: CONASET (información sobre casco de motociclistas y acreditación) y OMS, <em>Helmets: a road safety manual</em> (2023). Los valores 28% y 26% representan el riesgo relativo restante al aplicar reducciones de 72% y hasta 74%, respectivamente.</p>
+ </div>
+</section>
+
 <div class="ticker"><div class="ticker-inner"><span>NO TODO CASCO ES IGUAL</span>✦<span>REVISA ANTES DE RODAR</span>✦<span>RED FLAG</span>✦<span>NO TODO CASCO ES IGUAL</span>✦<span>REVISA ANTES DE RODAR</span>✦</div></div>
 <section class="section" id="como"><div class="kicker">Una experiencia en 3 pasos</div><h2>UNA DUDA.<br><span class="red">UNA RESPUESTA.</span></h2><p class="intro">La campaña convierte una lista técnica en una acción sencilla. No necesitas conocer la normativa: solo mirar qué marca y modelo tienes.</p><div class="steps"><article class="step"><div class="num">01</div><h3>Busca</h3><p>Selecciona la marca y escribe el modelo que aparece en tu casco.</p></article><article class="step"><div class="num">02</div><h3>Comprueba</h3><p>La herramienta contrasta tu búsqueda con el listado oficial de cascos acreditados.</p></article><article class="step"><div class="num">03</div><h3>Actúa</h3><p>Si hay dudas, revisa la etiqueta y continúa la verificación en CONASET.</p></article></div></section>
 <section class="black" id="revisa"><div class="section verify"><div><div class="kicker">Que no te engañen</div><h2>REVISA LAS<br><span style="color:var(--y)">SEÑALES.</span></h2><p class="intro">El objetivo no es solo responder una búsqueda. También queremos que el usuario sepa qué mirar cuando compre o use un casco.</p></div><div class="checklist"><h3>Antes de salir, comprueba:</h3><div class="check"><div class="icon">1</div><div><b>Marca y modelo</b><br>Que coincidan con los datos de tu casco.</div></div><div class="check"><div class="icon">2</div><div><b>Etiqueta de acreditación</b><br>Busca la identificación correspondiente.</div></div><div class="check"><div class="icon">3</div><div><b>QR e información oficial</b><br>Contrasta los datos con CONASET.</div></div><a class="button" href="https://www.conaset.cl/cascos-acreditados/" target="_blank" rel="noopener">IR A CONASET ↗</a></div></div></section>
